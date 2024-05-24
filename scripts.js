@@ -85,3 +85,11 @@ console.log(products.map((product) => product.product));
 // Advanced Exercise 2: Filter by Name Length
 console.log("Advanced Exercise 2: Filter by Name Length");
 console.log(products.filter((product) => product.product.length <= 5));
+
+// Advanced Exercise 3: Price Manipulation
+console.log("Advanced Exercise 3: Price Manipulation");
+console.log(
+  products
+    .filter((product) => String(product.price).trim() !== "")
+    .reduce((sum, product) => sum + Number(product.price), 0)
+);
