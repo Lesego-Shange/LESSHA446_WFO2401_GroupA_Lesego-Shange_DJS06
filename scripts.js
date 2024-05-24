@@ -81,3 +81,7 @@ console.log(nameProvinceMapping);
 // Advanced Exercise 1: Log Products
 console.log("Advanced Exercise 1: Log Products");
 console.log(products.map((product) => product.product));
+
+// Advanced Exercise 2: Filter by Name Length
+console.log("Advanced Exercise 2: Filter by Name Length");
+console.log(products.filter((product) => product.product.length <= 5));
