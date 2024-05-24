@@ -55,3 +55,10 @@ console.log(nameLengths);
 console.log("Exercise 4: Sorting");
 const sortedProvinces = [...provinces].sort();
 console.log(sortedProvinces);
+
+// Exercise 5: Filtering Cape
+console.log("Exercise 5: Filtering Cape");
+const filteredProvinces = provinces.filter(
+  (province) => !province.includes("Cape")
+);
+console.log(filteredProvinces.length);
