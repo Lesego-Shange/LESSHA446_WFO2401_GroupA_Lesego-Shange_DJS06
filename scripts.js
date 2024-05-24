@@ -45,3 +45,8 @@ names.forEach((name, index) => {
 console.log("Exercise 2: Uppercase Transformation");
 const upperCaseProvinces = provinces.map((province) => province.toUpperCase());
 console.log(upperCaseProvinces);
+
+// Exercise 3: Name Lengths
+console.log("Exercise 3: Name Lengths");
+const nameLengths = names.map((name) => name.length);
+console.log(nameLengths);
