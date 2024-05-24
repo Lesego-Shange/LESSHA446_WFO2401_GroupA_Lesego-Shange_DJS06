@@ -97,3 +97,23 @@ console.log(
 // Advanced Exercise 4: Concatenate Product Names
 console.log("Advanced Exercise 4: Concatenate Product Names");
 console.log(products.reduce((acc, product) => `${acc}${product.product}`, ""));
+
+// Advanced Exercise 5: Find Extremes in Prices
+console.log("Advanced Exercise 5: Find Extremes in Prices");
+console.log(
+  (() => {
+    const validProducts = products.filter(
+      (product) => String(product.price).trim() !== ""
+    );
+    const prices = validProducts.map((product) => Number(product.price));
+    const highestPrice = Math.max(...prices);
+    const lowestPrice = Math.min(...prices);
+    const highestProduct = validProducts.find(
+      (product) => Number(product.price) === highestPrice
+    );
+    const lowestProduct = validProducts.find(
+      (product) => Number(product.price) === lowestPrice
+    );
+    return `Highest: ${highestProduct.product}. Lowest: ${lowestProduct.product}.`;
+  })()
+);
