@@ -69,3 +69,11 @@ const containsS = names.map((name) =>
   name.split("").some((char) => char.toLowerCase() === "s")
 );
 console.log(containsS);
+
+// Exercise 7: Creating Object Mapping
+console.log("Exercise 7: Creating Object Mapping");
+const nameProvinceMapping = names.reduce((acc, name, index) => {
+  acc[name] = provinces[index];
+  return acc;
+}, {});
+console.log(nameProvinceMapping);
