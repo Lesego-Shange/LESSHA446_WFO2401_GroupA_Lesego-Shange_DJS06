@@ -50,3 +50,8 @@ console.log(upperCaseProvinces);
 console.log("Exercise 3: Name Lengths");
 const nameLengths = names.map((name) => name.length);
 console.log(nameLengths);
+
+// Exercise 4: Sorting
+console.log("Exercise 4: Sorting");
+const sortedProvinces = [...provinces].sort();
+console.log(sortedProvinces);
