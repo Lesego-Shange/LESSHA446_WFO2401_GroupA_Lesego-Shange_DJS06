@@ -93,3 +93,7 @@ console.log(
     .filter((product) => String(product.price).trim() !== "")
     .reduce((sum, product) => sum + Number(product.price), 0)
 );
+
+// Advanced Exercise 4: Concatenate Product Names
+console.log("Advanced Exercise 4: Concatenate Product Names");
+console.log(products.reduce((acc, product) => `${acc}${product.product}`, ""));
