@@ -117,3 +117,21 @@ console.log(
     return `Highest: ${highestProduct.product}. Lowest: ${lowestProduct.product}.`;
   })()
 );
+
+// Advanced Exercise 6: Object Transformation
+console.log("Advanced Exercise 6: Object Transformation");
+console.log(
+  products.reduce((acc, product) => {
+    acc[product.product] = { name: product.product, cost: product.price };
+    return acc;
+  }, {})
+);
+
+// Advanced Exercise 6: Object Transformation
+console.log("Advanced Exercise 6: Object Transformation");
+console.log(
+  Object.entries(products).reduce((acc, [index, product]) => {
+    acc[product.product] = { name: product.product, cost: product.price };
+    return acc;
+  }, {})
+);
